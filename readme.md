@@ -20,21 +20,19 @@ Saya menggunakan GORM locking clauses agar
 
 ## Postman Api documentation
 https://documenter.getpostman.com/view/45402659/2sBXVo97rg
-https://documenter.getpostman.com/view/45402659/2sBXVo97rg
-https://documenter.getpostman.com/view/45402659/2sBXVo97rg
-
 
 ## Cara Menjalankan Project
-1. Buat .env dan sesuaikan dengan .env.example
-2. Jalankan docker
+1. Clone repo ini
+2. Buat .env dan sesuaikan dengan .env.example
+3. Jalankan docker
 ````bash
 docker compose up -d
 ````
-3. Buka
+4. Buka
 ````bash
 docker exec -it postgres psql -U {POSTGRES_USER} -d {POSTGRES_DB}
 ````
-4. Jalankan SQL schema dan seeder
+5. Jalankan SQL schema dan seeder
 ````sql
 CREATE TABLE users (
     id serial primary key,
@@ -70,7 +68,7 @@ INSERT INTO wallets (user_id, balance) VALUES
 (4, 0);
 ````
 
-5. Jalankan server
+6. Jalankan server
 ````bash
 go run app/gin-server/main.go
 ````
