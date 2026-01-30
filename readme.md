@@ -32,7 +32,7 @@ docker compose up -d
 ````
 3. Buka
 ````bash
-docker exec -it postgres psql -U {username} -d {db_name}
+docker exec -it postgres psql -U {POSTGRES_USER} -d {POSTGRES_DB}
 ````
 4. Jalankan SQL schema dan seeder
 ````sql
