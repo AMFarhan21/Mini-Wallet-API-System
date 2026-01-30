@@ -66,9 +66,9 @@ INSERT INTO wallets (user_id, balance) VALUES
 (2, 0),
 (3, 0),
 (4, 0);
-```
+````
 
 5. Jalankan server
-```bash
+````bash
 go run app/gin-server/main.go
-```
+````
