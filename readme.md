@@ -1,13 +1,10 @@
 ## Arsitektur
 Aplikasi ini menggunakan Clean Architecture:
-#### Client
-            ↓
+
 #### Handler(HTTP layer) 
 - Bertanggungjawab untuk menerima request, melakukan validasi input, dan mengembalikan response
-            ↓
 #### Service (Business layer berfungsi)
 - Sebagai tempat logika bisnis, seperti validasi saldo, proses transfer, serta koordinasi antar repository
-            ↓
 #### Repository (Data access layer)
 - Berfungsi untuk berkomunikasi dengan database
 
@@ -28,16 +25,15 @@ https://documenter.getpostman.com/view/45402659/2sBXVo97rg
 ## Cara Menjalankan Project
 1. Buat .env dan sesuaikan dengan .env.example
 2. Jalankan docker
-```bash
+````bash
 docker compose up -d
-```
+````
 3. Buka
-```bash
+````bash
 docker exec -it postgres psql -U {username} -d {db_name}
-```
+````
 4. Jalankan SQL schema dan seeder
-````md
-```sql
+````sql
 CREATE TABLE users (
     id serial primary key,
     name varchar(255),
@@ -70,7 +66,7 @@ INSERT INTO wallets (user_id, balance) VALUES
 (2, 0),
 (3, 0),
 (4, 0);
-
+```
 
 5. Jalankan server
 ```bash
