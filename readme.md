@@ -20,6 +20,8 @@ Saya menggunakan GORM locking clauses agar
 
 ## Postman Api documentation
 https://documenter.getpostman.com/view/45402659/2sBXVo97rg
+https://documenter.getpostman.com/view/45402659/2sBXVo97rg
+https://documenter.getpostman.com/view/45402659/2sBXVo97rg
 
 
 ## Cara Menjalankan Project
