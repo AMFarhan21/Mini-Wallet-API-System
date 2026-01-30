@@ -1,13 +1,13 @@
 ## Arsitektur
 Aplikasi ini menggunakan Clean Architecture:
 #### Client
-↓
+            ↓
 #### Handler(HTTP layer) 
 - Bertanggungjawab untuk menerima request, melakukan validasi input, dan mengembalikan response
-↓
+            ↓
 #### Service (Business layer berfungsi)
 - Sebagai tempat logika bisnis, seperti validasi saldo, proses transfer, serta koordinasi antar repository
-↓
+            ↓
 #### Repository (Data access layer)
 - Berfungsi untuk berkomunikasi dengan database
 
@@ -70,9 +70,9 @@ INSERT INTO wallets (user_id, balance) VALUES
 (2, 0),
 (3, 0),
 (4, 0);
-```
 
-4. Jalankan server
+
+5. Jalankan server
 ```bash
 go run app/gin-server/main.go
 ```
